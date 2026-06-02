@@ -9,7 +9,7 @@ I am a **Technical Product Manager** with 6+ years of experience owning and scal
 
 ### 📈 Highlight Projects
 - 🧠 **[Daily Energy Coach (Ebb)](https://github.com/bhavyaamahajann/Daily_Energy_Coach):** A privacy-first Streamlit & React app optimizing cognitive load using wearable data.
-- 📊 **FinServCo CX Intelligence:** An AI-driven conversation quality analytics platform using NLP.
+- 📊 **[FinServCo CX Intelligence Platform](https://assets.nextleap.app/submissions/FinServeCo-AIQualityFramework-6213c503-399a-4940-abca-6b18290d237e.pdf):** An AI-driven conversation quality analytics platform using NLP.
 
 ### 📫 Connect with Me
 - 💼 [LinkedIn](https://linkedin.com/in/bhavyaamahajan)
