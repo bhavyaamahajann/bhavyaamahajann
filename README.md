@@ -4,7 +4,7 @@ I am a **Technical Product Manager** with 6+ years of experience owning and scal
 
 ### 🛠️ What I Do & Build
 - 🚀 **Product Management:** PRDs, Agile, MongoDB, SQL, APIs & integrations.
-- 🤖 **AI/ML & Prototyping Tools:** n8n, OpenAI API, Claude, LangChain, Hugging Face, Lovable, Antigravity, Cursor, LangSmith.
+- 🤖 **AI/ML & Prototyping Tools:** n8n, OpenAI API, Claude, Hugging Face, Lovable, Antigravity, Cursor.
 - 💻 **Side Projects:** I love prototyping with React, Streamlit, and building Python-based data products (like [Ebb - Daily Energy Coach](https://daily-energy-coach.streamlit.app/)).
 
 ### 📈 Highlight Projects
