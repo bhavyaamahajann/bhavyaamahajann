@@ -1,16 +1,17 @@
-## Hi there 👋
+# Hi, I'm Bhavya Mahajan 👋
 
-<!--
-**bhavyaamahajann/bhavyaamahajann** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am a **Technical Product Manager** with 6+ years of experience owning and scaling B2B SaaS platforms across Healthcare, HR Tech, and Procurement Automation. I bridge the gap between complex engineering, ML pipelines, and user-centric design to ship high-impact products.
 
-Here are some ideas to get you started:
+### 🛠️ What I Do & Build
+- 🚀 **Product Management:** PRDs, Agile, MongoDB, SQL, APIs & integrations.
+- 🤖 **AI/ML Workflows:** Experienced in human-in-the-loop workflows, NLP classification, and LLM orchestration.
+- 💻 **Side Projects:** I love prototyping with React, Streamlit, and building Python-based data products (like [Ebb - Daily Energy Coach](https://daily-energy-coach.streamlit.app/)).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📈 Highlight Projects
+- 🧠 **[Daily Energy Coach (Ebb)](https://github.com/bhavyaamahajann/Daily_Energy_Coach):** A privacy-first Streamlit & React app optimizing cognitive load using wearable data.
+- 📊 **FinServCo CX Intelligence:** An AI-driven conversation quality analytics platform using NLP.
+
+### 📫 Connect with Me
+- 💼 [LinkedIn](https://linkedin.com/in/bhavyaamahajan)
+- ✍️ [Product Portfolio](https://nextleap.app/portfolio/bhavya-mahajan-t4b0)
+- ✉️ [Email](mailto:mahajan.bhavya36@gmail.com)
