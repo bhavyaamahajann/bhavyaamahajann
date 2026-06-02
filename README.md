@@ -14,4 +14,5 @@ I am a **Technical Product Manager** with 6+ years of experience owning and scal
 ### 📫 Connect with Me
 - 💼 [LinkedIn](https://linkedin.com/in/bhavyaamahajan)
 - ✍️ [Product Portfolio](https://nextleap.app/portfolio/bhavya-mahajan-t4b0)
+- 📄 [Download Resume (PDF)](Bhavya_Mahajan_Resume.pdf)
 - ✉️ [Email](mailto:mahajan.bhavya36@gmail.com)
