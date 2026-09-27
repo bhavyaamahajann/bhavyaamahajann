@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Mahajan - Resume (ATS Friendly)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2b2b2b;
+            line-height: 1.35;
+            font-size: 10.5px;
+            background-color: #ffffff;
+            -webkit-print-color-adjust: exact;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 12mm 15mm;
+            margin: 0 auto;
+            position: relative;
+            background: white;
+            overflow: hidden;
+        }
+        a {
+            color: #1D76E2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            border-bottom: 2px solid #1D76E2;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .name-title {
+            display: flex;
+            flex-direction: column;
+        }
+        .name {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1D76E2;
+            line-height: 1;
+        }
+        .title {
+            font-size: 13px;
+            font-weight: 500;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 3px;
+            font-size: 9.5px;
+            color: #555;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .contact-item svg {
+            width: 11px;
+            height: 11px;
+            fill: #666;
+        }
+        section {
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1D76E2;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #1D76E2;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+        }
+        .summary-text {
+            color: #333;
+            text-align: justify;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        .experience-item {
+            margin-bottom: 10px;
+        }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+            font-size: 11px;
+            color: #111;
+        }
+        .company {
+            font-size: 11px;
+            color: #1D76E2;
+            text-transform: uppercase;
+        }
+        .role-desc {
+            font-style: italic;
+            color: #444;
+            font-weight: 500;
+            font-size: 10px;
+            margin-top: 1px;
+        }
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 3px;
+            color: #333;
+            font-size: 9.8px;
+            text-align: justify;
+            line-height: 1.35;
+        }
+        li::before {
+            content: "➔";
+            position: absolute;
+            left: 0;
+            color: #1D76E2;
+            font-size: 7px;
+            top: 2px;
+        }
+        .project-item {
+            margin-bottom: 6px;
+            font-size: 9.8px;
+            line-height: 1.35;
+        }
+        .project-title {
+            font-weight: 700;
+            color: #111;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            font-size: 9.8px;
+        }
+        .skill-category {
+            background-color: #f7f9fc;
+            padding: 6px 8px;
+            border-radius: 4px;
+            border-left: 3px solid #1D76E2;
+        }
+        .skill-category-title {
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 8.5px;
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .edu-item {
+            font-size: 9.8px;
+        }
+        .edu-degree {
+            font-weight: 700;
+            color: #222;
+        }
+        .edu-meta {
+            font-size: 9px;
+            color: #555;
+        }
+        .achievements-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .achievement-item {
+            font-size: 9.8px;
+        }
+        .achievement-title {
+            font-weight: 700;
+            color: #222;
+        }
+        .achievement-links {
+            font-size: 9px;
+            margin-top: 1px;
+        }
+
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+            .page {
+                margin: 0;
+                border: initial;
+                width: 210mm;
+                height: 297mm;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header-content">
+                <div class="name-title">
+                    <div class="name">Bhavya Mahajan</div>
+                    <div class="title">Product Manager</div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Bangalore, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <a href="mailto:mahajan.bhavya36@gmail.com">mahajan.bhavya36@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <a href="tel:+919876588141">+91 98765 88141</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        <a href="https://linkedin.com/in/bhavyaamahajan" target="_blank">linkedin.com/in/bhavyaamahajan</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        <a href="https://github.com/bhavyaamahajann" target="_blank">github.com/bhavyaamahajann</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                        <a href="https://nextleap.app/portfolio/bhavyamahajan" target="_blank">nextleap.app/portfolio/bhavyamahajan</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-title">Summary</div>
+            <p class="summary-text">
+                Product Manager with 6+ years of experience owning and scaling B2B SaaS platforms across Healthcare and HR Tech. Strong track record of driving complex, high-impact product initiatives across procurement, vendor integrations, automation, and internal platforms. Led AI-driven and data-heavy systems across discovery, execution, and scale, delivering <strong>30% revenue uplift</strong>, <strong>70% operational efficiency gains</strong>, and <strong>80% faster processing</strong>. Experienced in partnering with enterprise customers, engineering, and operations teams to ship reliable, scalable products.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">Experience</div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="company">Dentira Inc.</span>
+                    <span>May 2021 – Present | Bangalore, India</span>
+                </div>
+                <div class="role-desc">Product Manager – Procurement and Vendor Management</div>
+                <ul>
+                    <li>Owned <strong>vendor management & integrations</strong> across web, email, and cXML flows, automating <strong>order creation (OC), tracking, and invoicing</strong> across catalog ingestion, pricing sync, inventory, and end-to-end order lifecycle.</li>
+                    <li>Led the development of a scalable <strong>supplier integration framework</strong> that simplified vendor onboarding and migration across multiple ordering channels, reducing <strong>manual support effort by 80%</strong> and improving <strong>order processing reliability by 90%</strong>.</li>
+                    <li>Partnered with engineering to define <strong>ML confidence thresholds, fallbacks, and human-in-the-loop workflows</strong> to ensure reliability in automated procurement flows.</li>
+                    <li>Led <strong>AI-powered invoice automation</strong> (ML-based PDF/cXML parsing), replacing Coupa/SAP workflows and driving <strong>+30% enterprise revenue uplift</strong>.</li>
+                    <li>Owned end-to-end internal tool development allowing internal team to perform DB changes independently, <strong>reducing Dev dependency by 80%</strong>.</li>
+                    <li>Drove data-led UX improvements using MongoDB & LogRocket, resulting in <strong>80% faster order processing</strong>.</li>
+                    <li>Partnered with US enterprise customers and India-based engineering teams on large-scale rollouts.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="company">Eve-IT LLP</span>
+                    <span>Sep 2021 – Mar 2024 | Startup</span>
+                </div>
+                <div class="role-desc">Product Lead (Co-founder)</div>
+                <ul>
+                    <li><strong>Bootstrapped digital agency to ₹16L revenue</strong>, serving 18+ MSMEs with tailored growth strategies.</li>
+                    <li>Designed and executed acquisition experiments (SEO, PPC, email) across B2B clients.</li>
+                    <li><strong>Managed cross-functional team of 10+</strong> (design, engineering, growth); shipped UX revamps improving retention and conversion.</li>
+                    <li>Shipped digital products and growth frameworks for B2B/MSME clients: <a href="https://www.eveit.in/" target="_blank">https://www.eveit.in/</a></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="company">Advantage Club.ai</span>
+                    <span>Jun 2020 – May 2021 | Gurugram, India</span>
+                </div>
+                <div class="role-desc">Business Analyst (Product)</div>
+                <ul>
+                    <li>Onboarded <strong>20+ enterprises and 40+ partner brands</strong>, driving platform adoption.</li>
+                    <li>Championed <strong>Agile product practices</strong> to improve integration velocity and stakeholder alignment.</li>
+                    <li>Collaborated with design to revamp engagement workflows, delivering <strong>62% uplift in user activity</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Projects</div>
+            <div class="project-item">
+                <span class="project-title"><a href="https://assets.nextleap.app/submissions/FinServeCo-AIQualityFramework-6213c503-399a-4940-abca-6b18290d237e.pdf" target="_blank">FinServCo CX Intelligence Platform</a></span> — Built AI-driven conversation quality analytics using NLP to surface systemic CX issues via real-time dashboards for Product, CX, and Ops teams.
+            </div>
+            <div class="project-item">
+                <span class="project-title"><a href="https://daily-energy-coach.streamlit.app/" target="_blank">Daily Energy Coach – Ebb</a></span> — Designed & built a privacy-first energy coaching app syncing calendar events with wearable data (HRV, sleep) to optimize cognitive load. Built React/Streamlit prototype featuring Cognitive Alignment Score & focus-shield notifications. (<a href="https://github.com/bhavyaamahajann/Daily_Energy_Coach" target="_blank">GitHub</a> | <a href="https://daily-energy-coach.streamlit.app/" target="_blank">Prototype</a>)
+            </div>
+            <div class="project-item">
+                <span class="project-title"><a href="https://github.com/bhavyaamahajann/Anonymust" target="_blank">Mental Health MVP (Anonymust)</a></span> — Built AI-assisted triaging and recommendation flows; validated TAM (~150M users), achieving <strong>60% pilot adoption</strong>, ARR potential ₹12 Cr. (<a href="https://github.com/bhavyaamahajann/Anonymust" target="_blank">GitHub</a> | <a href="https://assets.nextleap.app/submissions/NLAnonyMust-a4105408-3124-4fb0-8b41-58fd4bf97299.pdf" target="_blank">Case Study</a>)
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Product Management</div>
+                    <div>PRDs, Roadmaps, Stakeholder Management, Jira, Confluence, Client Management</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Data & Analytics</div>
+                    <div>SQL, MongoDB, LogRocket, Google Analytics</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Tech & Tools</div>
+                    <div>Figma, Make, Zapier, n8n, Postman, Claude, Antigravity, Lovable, ChatGPT, Perplexity, Napkin AI, Draw.io</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Education & Achievements</div>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <div class="edu-degree">Thapar Institute of Engineering & Technology</div>
+                    <div class="edu-meta">B.Tech in Biotechnology Engineering | 2016 – 2020</div>
+                    <div class="edu-meta" style="font-weight: 600; color: #1D76E2;">CGPA: 8.85 | Merit Scholar (Top 10%)</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-degree">NextLeap Product Management Fellowship</div>
+                    <div class="edu-meta">March – July 2025 | <a href="https://nextleap.app/course-dashboard/nlcfs964l94ndak6lfrup/my-certificates" target="_blank">Top Fellow Certification</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 0;">
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <span class="achievement-title">Featured in Global Dove Ads (2024)</span> — 
+                    <a href="https://youtu.be/SjEWzIMPcaE?si=sWWUMlN4NuTosfT_" target="_blank">Video 1</a> | 
+                    <a href="https://youtu.be/mzOut6bWGZs?si=tBRWSECpxPhjeqi7" target="_blank">Video 2</a>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-title">Co-convenor | Thapar Food Festival</span> — Led Guinness World Record for maximum human chain (2019) | <a href="https://youtu.be/WPACwvEti8I?si=Qorz2P1P4Oe6QW7j" target="_blank">Watch Video</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
